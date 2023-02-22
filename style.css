@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(240, 246, 246);
+  color: rgb(71, 137, 139);
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  font-size: 1.5em;
+  padding: 0.25em;
+  text-align: center;
+}
+.container {
+  background-color: darkcyan;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.card {
+  background-color: antiquewhite;
+  color: darkcyan;
+  margin: 10px;
+  width: 250px;
+  border-radius: 5px;
+}

@@ -4,16 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(240, 246, 246);
+  background-color: aliceblue;
   color: rgb(71, 137, 139);
   margin: 0 auto;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
 }
 header {
-  position: sticky;
   top: 0;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 0.25em;
   text-align: center;
 }
@@ -23,7 +22,6 @@ header {
   justify-content: center;
   padding: 15px;
   flex-wrap: wrap;
-  padding: 15px;
 }
 .card {
   background-color: antiquewhite;
@@ -35,7 +33,33 @@ header {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: aliceblue;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 1s ease;
+}
+h2 {
+  margin: 15px 5px;
+}
+a {
+  background-color: darkcyan;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: antiquewhite;
+  width: 100px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+a:hover {
+  background-color: aliceblue;
+  color: rgb(62, 62, 62);
+}
 .card_image {
   height: 200px;
   border-radius: 5px 5px 0 0;
@@ -46,6 +70,12 @@ header {
 .card-1 {
   background-image: url(./images/beach.jpg);
 }
-#info {
-  padding: 15px;
+.card-2 {
+  background-image: url(./images/rain.jpg);
+}
+.card-3 {
+  background-image: url(./images/beach.jpg);
+}
+p {
+  margin: 15px 6px;
 }

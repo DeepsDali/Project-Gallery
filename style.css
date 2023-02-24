@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: aliceblue;
-  color: rgb(71, 137, 139);
+  color: #18122b;
+  background-color: #443c68ec;
   margin: 0 auto;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -15,19 +15,21 @@ header {
   font-size: 1em;
   padding: 0.25em;
   text-align: center;
+  background-color: aliceblue;
 }
 .container {
-  background-color: darkcyan;
+  background-color: #443c68;
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   flex-wrap: wrap;
 }
 .card {
-  background-color: antiquewhite;
-  color: darkcyan;
-  margin: 10px;
+  background-color: aliceblue;
+  color: rgb(1, 69, 69);
+  min-height: 300px;
   width: 250px;
+  margin: 5px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -43,39 +45,63 @@ header {
 h2 {
   margin: 15px 5px;
 }
-a {
+.btn {
   background-color: darkcyan;
   margin: 5px;
   text-decoration: none;
   border-radius: 2px;
+  border: 0px;
   cursor: pointer;
   color: antiquewhite;
-  width: 100px;
+  width: 120px;
+  font-size: 1em;
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-a:hover {
+.btn:hover {
   background-color: aliceblue;
   color: rgb(62, 62, 62);
 }
-.card_image {
-  height: 200px;
-  border-radius: 5px 5px 0 0;
-  width: 250px;
-  margin-bottom: 15px;
-  background-size: cover;
-}
+
 .card-1 {
-  background-image: url(./images/beach.jpg);
+  background-image: url(./images/bake.jpg);
 }
 .card-2 {
   background-image: url(./images/rain.jpg);
 }
 .card-3 {
-  background-image: url(./images/beach.jpg);
+  background-image: url(./images/rain.jpg);
+}
+.card-4 {
+  background-image: url(./images/rain.jpg);
+}
+.card-4 {
+  background-image: url(./images/rain.jpg);
+}
+.card_image {
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 15px;
+  background-size: cover;
 }
 p {
   margin: 15px 6px;
+}
+.description_body {
+  display: none;
+}
+.active {
+  display: block;
+}
+@media only screen and (max-width: 481px) {
+  .card {
+    width: 90vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 20vw;
+  }
 }
